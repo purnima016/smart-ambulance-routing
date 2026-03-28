@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Smart Ambulance Routing</string>
+
+        <!-- Add these two lines -->
+        <string name="welcome_driver">Welcome, Driver 🚑</string>
+        <string name="live_status">🚨 LIVE</string>
+
+        <!-- Your existing strings -->
+    <!-- Bottom Navigation Labels -->
+    <string name="home">Home</string>
+    <string name="preferences">Preferences</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="emergency">Emergency</string>
+    <string name="history">History</string>
+    <string name="hospital_info_placeholder">Hospital Information</string>
+    <string name="distance_placeholder">Calculating distance...</string>
+    <string name="geofence_info_placeholder">Geofence alert system</string>
+    <string name="back_to_emergency">Back to Emergency</string>
+    </resources>

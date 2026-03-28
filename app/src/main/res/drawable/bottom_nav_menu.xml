@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Patient" />
+
+    <item
+        android:id="@+id/nav_preferences"
+        android:icon="@drawable/ic_preferences"
+        android:title="Preferences" />
+
+    <item
+        android:id="@+id/nav_hospitals"
+        android:icon="@drawable/ic_hospital"
+        android:title="Hospitals" />
+
+    <item
+        android:id="@+id/nav_emergency"
+        android:icon="@drawable/ic_emergency"
+        android:title="Emergency" />
+
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_history"
+        android:title="History" />
+</menu>

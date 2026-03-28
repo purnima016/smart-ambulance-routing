@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏥 HOSPITAL PREFERENCES"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:id="@+id/tvPatientDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No patient data available"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#B71C1C"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#FFCDD2"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💰 PAYMENT METHOD"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/paymentRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/paymentPrivate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Private Insurance/Cash"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:buttonTint="#4CAF50"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/radio_card_background"
+                android:layout_marginBottom="8dp" />
+
+            <RadioButton
+                android:id="@+id/paymentGovernment"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Government Health Scheme"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:buttonTint="#4CAF50"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/radio_card_background"
+                android:layout_marginBottom="8dp" />
+
+            <RadioButton
+                android:id="@+id/paymentNoInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="No Insurance-Self Pay"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:buttonTint="#4CAF50"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/radio_card_background" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎯 SELECT PRIORITY"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/priorityRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/priorityNearest"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Ultra Fast-Nearest"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:buttonTint="#2196F3"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/radio_card_background"
+                android:layout_marginBottom="8dp" />
+
+            <RadioButton
+                android:id="@+id/priorityNearestGood"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Quality And Speed-Rated 4+"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:buttonTint="#2196F3"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/radio_card_background"
+                android:layout_marginBottom="8dp" />
+
+            <RadioButton
+                android:id="@+id/priorityAffordable"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Cost Effective-Government"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:buttonTint="#2196F3"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/radio_card_background"
+                android:layout_marginBottom="8dp" />
+
+            <RadioButton
+                android:id="@+id/priorityTopPrivate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Premium Care-Top Private"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:buttonTint="#2196F3"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/radio_card_background" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvRecommendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 RECOMMENDED: SELECT PREFERENCES"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:padding="18dp"
+            android:background="#FFF3E0"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

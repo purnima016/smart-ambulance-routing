@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEBEE"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUICK PATIENT DETAILS"
+            android:textColor="#D32F2F"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Emergency Type -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMERGENCY TYPE"
+            android:textColor="#D32F2F"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCardiac"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="❤️ CARDIAC"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAccident"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="🚗 ACCIDENT"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnStroke"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="🧠 STROKE"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBreathing"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="🌬️ BREATHING"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Age Group -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AGE GROUP"
+            android:textColor="#D32F2F"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnChild"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="👶 CHILD"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="11sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAdult"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="👨 ADULT"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="11sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSenior"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="👴 SENIOR"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- Blood Group -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLOOD GROUP"
+            android:textColor="#D32F2F"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAPos"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="A+"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBPos"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="B+"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOPos"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="O+"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnABPos"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="AB+"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUnknown"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="❓ UNKNOWN"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Condition -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONDITION"
+            android:textColor="#D32F2F"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCritical"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="🔴 CRITICAL"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="11sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSerious"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="🟡 SERIOUS"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="11sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnStable"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:text="🟢 STABLE"
+                android:textColor="#FFFFFF"
+                android:background="#6A0DAD"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- Selected Display - Reduced bottom margin -->
+        <TextView
+            android:id="@+id/tvSelectedOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected: None"
+            android:textColor="#D32F2F"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Clear Button - Reduced top margin -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:text="🔄 CLEAR SELECTIONS"
+            android:textColor="#FFFFFF"
+            android:background="#FF9800"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

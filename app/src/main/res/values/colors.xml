@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="dark_gray">#757575</color>
+    <color name="light_gray">#F5F5F5</color>
+
+    <!-- Reds -->
+    <color name="emergency_red">#FF0000</color>
+    <color name="soft_red">#FF5252</color>
+    <color name="medical_red">#F44336</color>
+    <color name="light_red_bg">#FFEBEE</color>
+
+    <!-- Blues -->
+    <color name="blue">#2196F3</color>
+    <color name="blue_dark">#1976D2</color>
+    <color name="blue_light">#BBDEFB</color>
+    <color name="navy_blue">#1976D2</color> <!-- same as blue_dark but kept naming -->
+
+    <!-- Greens -->
+    <color name="green">#4CAF50</color>
+    <color name="green_dark">#388E3C</color>
+    <color name="forest_green">#388E3C</color> <!-- same as green_dark but kept naming -->
+
+    <!-- Oranges -->
+    <color name="orange">#FF9800</color>
+    <color name="amber">#FFC107</color>
+
+    <!-- Medical Theme Colors -->
+    <color name="medical_blue">#2196F3</color>
+    <color name="medical_green">#4CAF50</color>
+    <color name="medical_purple">#C507E6</color>
+    <color name="medical_orange">#FF9800</color>
+    <color name="medical_teal">#009688</color>
+
+    <!-- Purples -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="primary">#2196F3</color>
+
+    <!-- Notification colors -->
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="error_red">#F44336</color>
+    <color name="info_blue">#2196F3</color>
+    <!-- Teals -->
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Button Colors -->
+    <color name="dark_purple">#4A148C</color>
+    <color name="dark_purple_pressed">#380F6B</color>
+
+    <!-- Text Colors -->
+    <color name="white_text">#FFFFFF</color>
+    <color name="black_text">#000000</color>
+
+    <!-- EditText Colors -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="card_background">#F5F5F5</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="edittext_stroke">#9E9E9E</color>
+    <color name="hint_color">#757575</color>
+    <color name="bg_light">#F4F3FF</color>
+
+
+</resources>

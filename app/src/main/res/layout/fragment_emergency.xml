@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF3F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Emergency Header -->
+        <TextView
+            android:id="@+id/tvEmergencyInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚨 EMERGENCY ALERT"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#FFEBEE"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Hospital Details Card -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏥 SELECTED HOSPITAL"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvHospitalDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital details..."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Patient Details Card -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤 PATIENT INFORMATION"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvPatientDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient details..."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:layout_marginBottom="20dp" />
+
+        <!-- VOICE GUIDANCE CARD - NEW -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Header -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🎧 Voice Navigation Guide"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Audio Player Controls -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Play/Pause Button -->
+                    <ImageButton
+                        android:id="@+id/btnPlayPause"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_play"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:layout_marginEnd="12dp" />
+
+                    <!-- SeekBar for progress -->
+                    <SeekBar
+                        android:id="@+id/seekBarAudio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="12dp" />
+
+                    <!-- Time Display -->
+                    <TextView
+                        android:id="@+id/tvTimer"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <!-- Status Text -->
+                <TextView
+                    android:id="@+id/tvPlaybackStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tap play to hear trip instructions"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#666" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Action Status -->
+        <TextView
+            android:id="@+id/tvActionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Processing emergency..."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#FFF8E1"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Start Navigation Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗺️ START NAVIGATION"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            app:cornerRadius="12dp"
+            android:elevation="8dp"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.Material3.Button" />
+
+        <!-- Complete Trip Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCompleteTrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ COMPLETE TRIP"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            app:cornerRadius="12dp"
+            android:elevation="8dp"
+            android:padding="18dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            style="@style/Widget.Material3.Button" />
+
+        <!-- Emergency Instructions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 TRIP PROTOCOL:\n\n1. Click 'Start Navigation' to view route\n2. Check the route in Google Maps\n3. Press BACK button to return\n4. Click 'Complete Trip' to finish\n5. Trip automatically saved to history\n\n📍 SMART ALERT SYSTEM:\n• Hospital alerted at 500m distance\n• Medical team prepares in advance\n• Smooth patient handover"
+            android:textSize="14sp"
+            android:textColor="#5D4037"
+            android:padding="16dp"
+            android:background="#EFEBE9" />
+
+    </LinearLayout>
+</ScrollView>

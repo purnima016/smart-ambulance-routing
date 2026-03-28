@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "279471732020",
+    "project_id": "smartambulance-1d0ea",
+    "storage_bucket": "smartambulance-1d0ea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279471732020:android:3734bbedac895bde7de161",
+        "android_client_info": {
+          "package_name": "com.example.project2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp5OZoppqbAHwepTcr8c7FRQahl2lxijk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

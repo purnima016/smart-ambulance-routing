@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Notification Banner -->
+    <LinearLayout
+        android:id="@+id/notificationBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FF6B6B"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvNotification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCloseNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✕"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:text="🏥 RECOMMENDED HOSPITALS" />
+
+    <!-- Filter Info -->
+    <TextView
+        android:id="@+id/tvFilterInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E3F2FD"
+        android:textColor="#1976D2"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:text="Filtered by: ACCIDENT • B+ • Quality And Speed-Rated 4+" />
+
+    <!-- Location Message -->
+    <TextView
+        android:id="@+id/tvLocationMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:text="We need your location to find the nearest hospitals to you"
+        android:visibility="gone" />
+
+    <!-- RecyclerView for Hospitals -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHospitals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <!-- Buttons Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnEnableLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Location"
+            android:backgroundTint="@color/primary"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnRefreshBlood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh Blood Stock"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
